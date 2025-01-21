@@ -12,63 +12,12 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Fri, 13 Oct 2023 16:09:06 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 21 Jan 2025 20:12:39 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.7.1</generator>
-	<item>
-		<title>Sample Post 3</title>
-		<link>/sample-post-3/</link>
-					<comments>/sample-post-3/#respond</comments>
-		
-		<dc:creator><![CDATA[paginator]]></dc:creator>
-		<pubDate>Fri, 13 Oct 2023 16:09:06 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=24</guid>
-
-					<description><![CDATA[This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. Once we have your content finalized, we’ll replace this placeholder text with your real content. Sometimes it’s nice to put in text just to get an idea of how text will fill [&#8230;]]]></description>
-		
-					<wfw:commentRss>/sample-post-3/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Sample Post 2</title>
-		<link>/sample-post-2/</link>
-					<comments>/sample-post-2/#respond</comments>
-		
-		<dc:creator><![CDATA[paginator]]></dc:creator>
-		<pubDate>Fri, 13 Oct 2023 16:08:30 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=22</guid>
-
-					<description><![CDATA[This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. Once we have your content finalized, we’ll replace this placeholder text with your real content. Sometimes it’s nice to put in text just to get an idea of how text will fill [&#8230;]]]></description>
-		
-					<wfw:commentRss>/sample-post-2/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Sample Post 1</title>
-		<link>/sample-post-1/</link>
-					<comments>/sample-post-1/#respond</comments>
-		
-		<dc:creator><![CDATA[paginator]]></dc:creator>
-		<pubDate>Fri, 13 Oct 2023 16:05:02 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=18</guid>
-
-					<description><![CDATA[This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet. Once we have your content finalized, we’ll replace this placeholder text with your real content. Sometimes it’s nice to put in text just to get an idea of how text will fill [&#8230;]]]></description>
-		
-					<wfw:commentRss>/sample-post-1/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-	</channel>
+</channel>
 </rss>
