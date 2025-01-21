@@ -1,0 +1,1 @@
+::selection{color:var(--light);background:var(--primary)}a{color:var(--primary-l-3);transition:all .2s ease}a:hover{color:var(--primary-l-2);transition:all .2s ease}hr{border:1px dashed var(--primary)}figcaption{color:var(--secondary);font-weight:500}
