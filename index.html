@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gdocweb — Convert Google Docs to a Free Website</title>
+  <meta name="description" content="Turn any Google Doc into a beautiful website published on GitHub. No coding, no hosting costs, no hidden fees.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/gdocweb-icon.png">
+
+  <meta property="og:title" content="gdocweb — Convert Google Docs to a Free Website">
+  <meta property="og:description" content="No coding. No hosting fees. Publish to GitHub from Google Docs in minutes.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gdocweb.com/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="gdocweb home">
+        <img src="assets/gdocweb-logo.png" alt="gdocweb logo" width="160" height="36">
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" role="navigation" aria-label="Primary">
+        <a href="#how-it-works" class="nav-link">How it works</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#templates" class="nav-link">Templates</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="https://blog.gdocweb.com/" class="nav-link" target="_blank" rel="noopener">Blog</a>
+      </nav>
+
+      <a href="/oauth2/authorization/google" class="google-btn google-btn--nav">
+        <span class="google-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+          </svg>
+        </span>
+        <span class="google-text">Sign in with Google</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Convert Google Docs to Website</p>
+          <h1 id="hero-title">Turn your Google Doc into a live website</h1>
+          <p class="hero-lead">No code. No hosting fees. No hidden costs. Publish to GitHub in minutes using the tools you already know and love.</p>
+          <div class="hero-actions">
+            <a href="/oauth2/authorization/google" class="google-btn google-btn--large">
+              <span class="google-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                  <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                  <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                  <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                </svg>
+              </span>
+              <span class="google-text">Sign in with Google</span>
+            </a>
+            <a href="#how-it-works" class="btn btn--link">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-reveal-delay="150">
+          <div class="video-frame" id="video-frame" aria-label="Product demo video">
+            <button class="video-poster" id="video-poster" aria-label="Play gdocweb demo video">
+              <img src="assets/gdocweb-banner-hero.jpeg" alt="gdocweb demo video thumbnail" loading="eager">
+              <span class="play-button" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+              </span>
+            </button>
+            <div class="video-responsive" id="video-container" hidden>
+              <iframe
+                data-src="https://www.youtube.com/embed/aaDBFVx6qC8?rel=0&autoplay=1"
+                title="gdocweb demo video"
+                width="560"
+                height="315"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Trust badges">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <span class="trust-icon" aria-hidden="true">✓</span>
+          <span>100% free, forever</span>
+        </div>
+        <div class="trust-item reveal" data-reveal-delay="100">
+          <span class="trust-icon" aria-hidden="true">✓</span>
+          <span>No credit card required</span>
+        </div>
+        <div class="trust-item reveal" data-reveal-delay="200">
+          <span class="trust-icon" aria-hidden="true">✓</span>
+          <span>You own your data</span>
+        </div>
+        <div class="trust-item reveal" data-reveal-delay="300">
+          <span class="trust-icon" aria-hidden="true">✓</span>
+          <span>Hosted on GitHub Pages</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section section--light">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Simple three-step process</p>
+          <h2>How it works</h2>
+          <p class="section-subtitle">Convert your Google Docs into a published website in minutes.</p>
+        </div>
+
+        <div class="steps-layout">
+          <div class="steps-list" role="tablist" aria-label="How it works steps">
+            <button class="step-card active" role="tab" aria-selected="true" aria-controls="step-panel-1" data-step="0" data-image="assets/gdocweb-step-1.jpg">
+              <span class="step-number">1</span>
+              <div class="step-body">
+                <h3>Authorize Google access</h3>
+                <p>Give read-only permission so gdocweb can read your documents. We never keep access or use it for anything else.</p>
+              </div>
+            </button>
+            <button class="step-card" role="tab" aria-selected="false" aria-controls="step-panel-2" data-step="1" data-image="assets/gdocweb-step-2.png">
+              <span class="step-number">2</span>
+              <div class="step-body">
+                <h3>Select docs and theme</h3>
+                <p>Choose the Google Docs you want to publish and pick a theme that fits your content.</p>
+              </div>
+            </button>
+            <button class="step-card" role="tab" aria-selected="false" aria-controls="step-panel-3" data-step="2" data-image="assets/gdocweb-step-3.png">
+              <span class="step-number">3</span>
+              <div class="step-body">
+                <h3>Save to GitHub</h3>
+                <p>Generate your site into a GitHub repository for unlimited free hosting. A free GitHub account is required.</p>
+              </div>
+            </button>
+          </div>
+
+          <div class="step-panel reveal" data-reveal-delay="150" id="step-panel-1" role="tabpanel" aria-label="Step preview">
+            <div class="browser-frame browser-frame--shadow">
+              <div class="browser-header">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-address">gdocweb.com</span>
+              </div>
+              <div class="browser-body">
+                <img id="step-image" src="assets/gdocweb-step-1.jpg" alt="Authorize Google access" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="live-preview" class="section section--soft">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">See the transformation</p>
+          <h2>From Google Doc to website</h2>
+          <p class="section-subtitle">Drag the slider to compare your document with the published site.</p>
+        </div>
+
+        <div class="comparison reveal" id="comparison" data-reveal-delay="150" role="img" aria-label="Before and after comparison of a Google Doc becoming a website" style="--split: 50%;">
+          <img class="comparison-after" src="assets/gdocweb-after.webp" alt="Published website" loading="lazy">
+          <img class="comparison-before" src="assets/gdocweb-before.webp" alt="Google Doc source" loading="lazy">
+          <span class="comparison-label comparison-label--after">Website</span>
+          <span class="comparison-label comparison-label--before">Google Doc</span>
+          <button class="comparison-handle" id="comparison-handle" aria-label="Drag to compare before and after">
+            <span class="comparison-arrows" aria-hidden="true">‹ ›</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section section--light">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Why gdocweb?</p>
+          <h2>Built for effortless publishing</h2>
+          <p class="section-subtitle">Focus on your content. We'll handle the rest.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3>Free, reliable hosting</h3>
+            <p>Your site lives on GitHub Pages — enterprise-grade infrastructure with zero hosting costs. Add a custom domain whenever you're ready.</p>
+          </article>
+
+          <article class="benefit-card reveal" data-reveal-delay="100">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3>No coding needed</h3>
+            <p>Write in Google Docs like you always have. No markdown, no command line, no website builder to learn.</p>
+          </article>
+
+          <article class="benefit-card reveal" data-reveal-delay="200">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>You own everything</h3>
+            <p>Your generated site is yours. No tracking, no lock-in, no dependency on us. Remove your data anytime.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="templates" class="section section--soft">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Start with a template</p>
+          <h2>Templates for every use case</h2>
+          <p class="section-subtitle">Each template includes a sample Google Doc you can copy and make your own.</p>
+        </div>
+
+        <div class="templates-grid">
+          <article class="template-card reveal">
+            <img src="https://gdocweb.com/img/template-docs.png" alt="Documentation template preview" loading="lazy">
+            <div class="template-content">
+              <h3>Documentation</h3>
+              <p>Clean, collaborative documentation written where your team already works.</p>
+              <ul class="template-links">
+                <li><a href="https://shai-almog.github.io/GdocwebSoftwareDocs/" target="_blank" rel="noopener">Live site</a></li>
+                <li><a href="https://docs.google.com/document/d/1KmMi12or7wgreQJNyIeVm98m8C0l5_7Lxf_XjjrRuY4/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a></li>
+                <li><a href="https://github.com/shai-almog/GdocwebSoftwareDocs" target="_blank" rel="noopener">GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="template-card reveal" data-reveal-delay="80">
+            <img src="https://gdocweb.com/img/template-blog.png" alt="Blog template preview" loading="lazy">
+            <div class="template-content">
+              <h3>Blog</h3>
+              <p>Publish posts from Google Docs on a custom domain with ease.</p>
+              <ul class="template-links">
+                <li><a href="https://blog.gdocweb.com/" target="_blank" rel="noopener">Live site</a></li>
+                <li><a href="https://docs.google.com/document/d/1jvsVDXt-D6My8YANh20KxiqG0dM2iYMynA6gwIGm1X0/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a></li>
+                <li><a href="https://github.com/shai-almog/GdocwebBlog" target="_blank" rel="noopener">GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="template-card reveal" data-reveal-delay="160">
+            <img src="https://gdocweb.com/img/template-startup.png" alt="Startup template preview" loading="lazy">
+            <div class="template-content">
+              <h3>Startup single page</h3>
+              <p>Combine multiple documents into one polished landing page.</p>
+              <ul class="template-links">
+                <li><a href="https://shai-almog.github.io/GdocwebStartupDemo/" target="_blank" rel="noopener">Live site</a></li>
+                <li><a href="https://docs.google.com/document/d/1NeETBTjoK8_H0N_g1HSKo7dL8XQCg8KX595VCfGUVDs/edit?usp=sharing" target="_blank" rel="noopener">Section 1</a></li>
+                <li><a href="https://github.com/shai-almog/GdocwebStartupDemo" target="_blank" rel="noopener">GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="template-card reveal" data-reveal-delay="80">
+            <img src="https://gdocweb.com/img/template-resume.png" alt="Resume template preview" loading="lazy">
+            <div class="template-content">
+              <h3>Resume</h3>
+              <p>Showcase your experience with a professional personal site.</p>
+              <ul class="template-links">
+                <li><a href="https://shai-almog.github.io/GdocwebResumeSite/" target="_blank" rel="noopener">Live site</a></li>
+                <li><a href="https://docs.google.com/document/d/1WX7DAdHNgRm_ml4pJuDXleXQiQvPK8lJTFpa-AmjyaE/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a></li>
+                <li><a href="https://github.com/shai-almog/GdocwebResumeSite" target="_blank" rel="noopener">GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="template-card reveal" data-reveal-delay="160">
+            <img src="https://gdocweb.com/img/template-vacation.png" alt="Vacation template preview" loading="lazy">
+            <div class="template-content">
+              <h3>Vacation photos</h3>
+              <p>Share trips, weddings, and experiences in a beautiful photo site.</p>
+              <ul class="template-links">
+                <li><a href="https://shai-almog.github.io/GdocwebVacationSite/" target="_blank" rel="noopener">Live site</a></li>
+                <li><a href="https://docs.google.com/document/d/10tYG7FIks6UNAus0nTLZ8TIoOB182kREymoDGLUay1M/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a></li>
+                <li><a href="https://github.com/shai-almog/GdocwebVacationSite" target="_blank" rel="noopener">GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="template-card reveal" data-reveal-delay="240">
+            <img src="https://gdocweb.com/img/template-recipe.png" alt="Recipe template preview" loading="lazy">
+            <div class="template-content">
+              <h3>Recipe</h3>
+              <p>Share recipes and tutorials right from Google Docs.</p>
+              <ul class="template-links">
+                <li><a href="https://shai-almog.github.io/GdocwebCookingSite/" target="_blank" rel="noopener">Live site</a></li>
+                <li><a href="https://docs.google.com/document/d/1DTRHeYZGXA_XHKVAVN7T7fCgi1KhFD1XyWIvwuGjidA/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a></li>
+                <li><a href="https://github.com/shai-almog/GdocwebCookingSite" target="_blank" rel="noopener">GitHub</a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section section--light">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Loved by early users</p>
+          <h2>What people say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial reveal">
+            <p>“gdocweb has transformed the way I create websites. It's simple, efficient, and incredibly powerful. A real game-changer in web development.”</p>
+            <footer>
+              <img src="https://gdocweb.com/img/carl.jpg" alt="Carl" width="48" height="48" loading="lazy">
+              <cite>Carl, NM</cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal" data-reveal-delay="120">
+            <p>“I was amazed at how quickly I could go from a Google Doc to a fully functional website. The hosting on GitHub is seamless and reliable.”</p>
+            <footer>
+              <img src="https://gdocweb.com/img/kevin.jpg" alt="Kevin" width="48" height="48" loading="lazy">
+              <cite>Kevin, NY</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--soft">
+      <div class="container container--narrow">
+        <div class="section-header reveal">
+          <p class="eyebrow">Questions & answers</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list reveal" data-reveal-delay="150">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does gdocweb work?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>gdocweb turns your Google Docs into professional websites with just a few clicks. Select your documents, choose a theme, and publish to GitHub.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is gdocweb really free?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes. gdocweb is completely free. We use GitHub Pages for hosting, so there are no hosting costs or hidden fees.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What data does gdocweb store?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>We only store the connection between your account and your generated website settings. Your data isn't sent to third parties, and you can remove it anytime.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I use my own domain?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes. GitHub Pages supports custom domains for free. You only need to purchase the domain itself.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta" aria-labelledby="cta-title">
+      <div class="container cta-content reveal">
+        <h2 id="cta-title">Publish your first page today</h2>
+        <p>Join thousands turning Google Docs into fast, free websites.</p>
+        <a href="/oauth2/authorization/google" class="google-btn google-btn--large">
+          <span class="google-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+            </svg>
+          </span>
+          <span class="google-text">Sign in with Google</span>
+        </a>
+        <p class="cta-note">Free forever. No setup required.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" aria-label="gdocweb home">
+          <img src="assets/gdocweb-logo.png" alt="gdocweb logo" width="140" height="32" loading="lazy">
+        </a>
+        <p>Transforming Google Docs into professional websites effortlessly.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="/tos.html">Terms of Service</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-legal">
+        <h4>Limited Use Policy</h4>
+        <p>gdocweb does not transfer information received from Google or GitHub APIs to any other entity. We adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> gdocweb. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.reddit.com/r/gdocweb" target="_blank" rel="noopener" aria-label="Reddit">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.25-1.25-1.25zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"></path></svg>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PL8GhfcywW9YODHRKZveKBRM2FMxu76dg7" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/gdocweb/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
